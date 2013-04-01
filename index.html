@@ -59,7 +59,9 @@ border-radius: 5px; float: right; line-height: 15px;}
 .sharebtn { text-decoration: none;  color:#929497;; font-size: .9em; text-align: center; width:40px; margin-left: 5px;}
 
 /*customer styling */
-.gemuser1 { background:url('images/user1.png') no-repeat; margin-left: 36px; padding-top:40px; padding-left: 16px;}
+.gemuser1 { float:left;background:url('images/user1.png') no-repeat; margin-left: 36px; padding-top:40px; padding-left: 16px; width: 50px;}
+.recommendation { float: left; width: 255px; font-size: 1em; color: #6D6F71; line-height: 1.2em; margin-left: 20px; padding-left: 40px;}
+.dots {background: url('images/dots.png') repeat-y; background-position: 50% 50%;  height: 100px; position:absolute; z-index: -20; top: 100px left:100px; margin-top: 60px;}
 
 
 
@@ -111,6 +113,7 @@ border-radius: 5px; float: right; line-height: 15px;}
 			<div class="nine columns offset-by-five">
 				<!-- Start the first row- professional information including name,location etc
 				================================================== -->
+				<div class="dots">Something here</div>
 				<div class="row">
 					<div id="service_professional1"></div>
 						<section class="service_info">
@@ -133,8 +136,12 @@ border-radius: 5px; float: right; line-height: 15px;}
 			================================================== -->
 
 			<div class="row">
-				<section class="recommendations">
+				<section class="gem-recommendations">
 					<div class="gemuser1"><h4>Ann</h4></div>
+
+					<section class="recommendation">
+						<p>I love the ambience and their expertise. Highly recommend you arrive early!</p>
+					</section>
 
 
 				</section>
