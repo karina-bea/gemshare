@@ -20,6 +20,7 @@
   ================================================== -->
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 	
 
@@ -43,6 +44,16 @@
  #share:before {content: url('images/share.png'); position:relative; top:10px; right:10px;}
  #find:before {content: url('images/find.png'); position:relative; top:10px; right:10px;}
 
+ /*user info styling */
+#user-info {font-size: 11px; line-height: 12px; margin-top: 10px;}
+#user-info img {float:left; margin-right: 5px;}
+
+/*service styling */
+
+#service_professional1 {background: url('images/service_image.png'); height: 124px; width:114px; float: left;}
+.service_info {float: left; margin: 30px 0 0 10px;}
+
+
 </style>
 
 
@@ -51,7 +62,7 @@
 
 
 
-	<!-- Primary Page Layout
+	<!-- Start of navigation
 	================================================== -->
 	
 <nav>
@@ -62,37 +73,61 @@
 		<div class="row">
 		
 
-<div class="two columns">
+		<div class="two columns">
 	<div id="home"></div> 
-</div>
-<div class="three columns"><div class="searchbar">
+	</div>
+	<div class="three columns"><div class="searchbar">
 	<input placeholder="Search" class="navsearch">
-</div></div>
-<div class="nine columns">
+	</div></div>
+	<div class="nine columns">
 	<ul>
 	<li id="gemfile">Gemfile</li>
 	<li id="ask">Ask</li>
 	<li id="share">Share</li>
 	<li id="find">Find</li>
 	</ul>
-</div>
-<div class="two columns">
-	<div id="home"></div> 
-</div>
-</div>
-<!--
-	<div class="search"><input placeholder="Search"></input><button>Go</button></div>
 	</div>
-	-->
-	 
-
-
-</div>
-
-</nav>
+	<div class="two columns">
+	<div id="user-info"><img src="images/user_photo.png">Hi <br/> Maryam</div> 
+	</div>
+	</div>
+	</div>
+	</nav>
 
 <!-- End of navigation
 	================================================== -->
+
+	<section>
+		<div class="container">
+			<div class="nine columns offset-by-five">
+				<div class="row">
+					<div id="service_professional1"></div>
+					<section class="service_info">
+					<h1>Shelly Harris</h1>
+					<h2>Hairstylist</h2>
+					
+					<h3>Grasshopper Salon </h3>
+					<address>12 South Park, SoMa <a>Map 415-789-6543</a></address>
+					</section>
+
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+
+
+
+
+
+	</section>
+
+
+
+
 
 <!-- End Document
 ================================================== -->
