@@ -65,7 +65,7 @@ border-radius: 5px; float: right; line-height: 15px;}
 .gemuser2 { float:left;background:url('images/user2.png') no-repeat; margin-left: 36px; padding-top:40px; padding-left: 16px; width: 50px;}
 .gemuser2 h4 {background-color: white;}
 
-.gemuser3 { float:left;background:url('images/user3.png') no-repeat; margin-left: 36px; padding-top:40px; padding-left: 16px; width: 50px;}
+.gemuser3 { float:left;background:url('images/user3.png') no-repeat; margin-left: 18px; padding-top:40px; background-position: top; text-align: center; }
 .gemuser3 h4 {background-color: white;}
 
 
@@ -74,8 +74,16 @@ box-shadow: 1px 1px 1px 1px #eee; background: white; border: 1px outset #eee; -w
 border-radius: 10px; padding:10px; float:right;}
 
 
-.dots {background: url('images/dots.png') repeat-y; background-position: 50% 50%;  height: 300px; position:absolute; z-index: -20; top: 100px left:100px; margin-top: 60px; margin-left: 60px;}
-.dots-v {background: url('images/dots-h.png') repeat-x; background-position: 50% 50%; height:50px; position:absolute; z-index: -20; top: 100px; left:100px;  width:100px; height: 20px;}
+.dots {background: url('images/dots.png') repeat-y; background-position: 50% 50%;  height: 400px; position:absolute; z-index: -20; top: 100px left:100px; margin-top: 60px; margin-left: 60px;}
+
+@media only screen and (min-width: 900px) {
+.dots-vertical { position:absolute; z-index: -20; top: 168px;
+left: 387px;}
+.dots-vertical li {background: url('images/dots-h.png') repeat-x; background-position: top; height:50px;   width:100px; height: 20px; padding-top: 66px;}
+}
+
+@media only screen and (max-width: 900px){.gem-recommendations:before{content: url('images/dots-h.png') repeat; position:relative; top:5px; z-index: -20;}}
+
 
 .gem{background: url('images/gem.png') no-repeat; background-position: bottom; height:35px; float:left; background-color: white;}
 .half-gem{background: url('images/half_gem.png') no-repeat; background-position: bottom; height:35px; float:left; background-color: white;}
@@ -133,6 +141,12 @@ border-radius: 10px; padding:10px; float:right;}
 				<!-- Start the first row- professional information including name,location etc
 				================================================== -->
 				<div class="dots">&nbsp</div>
+				<ul class="dots-vertical">
+					<li>&nbsp</li>
+					<li>&nbsp</li>
+					<li>&nbsp</li>
+
+					</ul>
 				<div class="row">
 					<div id="service_professional1"></div>
 						<section class="service_info">
@@ -155,6 +169,7 @@ border-radius: 10px; padding:10px; float:right;}
 			================================================== -->
 
 			<div class="row">
+
 				
 					<div class="gemuser1"><h4>Ann</h4></div>
 					<section class="gem-recommendations">
@@ -194,7 +209,7 @@ border-radius: 10px; padding:10px; float:right;}
 
 			<div class="row">
 				
-					<div class="gemuser3"><h4>Maria</h4></div>
+					<div class="gemuser3"><h4>Mark <br/>friends with Ann</h4></div>
 					<section class="gem-recommendations">
 						<div class="gem"><p>Dec 22</p></div>
 						
