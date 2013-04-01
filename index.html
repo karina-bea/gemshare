@@ -30,15 +30,18 @@
 <style>
 
  nav {display:block; background-color: #f5efe1; overflow:visible;}
- #home {background-image: url('images/logo.png'); background-repeat: no-repeat; height: 32px; width: 44px;  display: block; margin:5px 20px; width: 100%;}
+ #home {background-image: url('images/logo.png'); background-repeat: no-repeat; height: 32px; width: 44px;  display: block; margin:5px 20px; }
  .search {position: relative; display:block;}
- nav li {float:left; font-size: 14.5px; font-weight: bold; color:#919396; width:112px; margin-top: 5px;}
+ nav li {float:left; font-size: 14.5px; font-weight: bold; color:#919396;  padding:0 9px 10px 20px;}
+ .searchbar {margin-top: 10px; opacity: .5;}
+
  /*nav elements styling */
 
- #gemfile:before {content: url('images/logo.png'); position:relative; top:10px; right:10px;}
- #ask:before {content: url('images/logo.png'); position:relative; top:10px; right:10px;}
- #share:before {content: url('images/logo.png'); position:relative; top:10px; right:10px;}
- #find:before {content: url('images/logo.png'); position:relative; top:10px; right:10px;}
+ #gemfile:before {content: url('images/gemshare.png'); position:relative; top:10px; right:10px; }
+ #gemfile {background-color: #c5b59e; color:#F3ECDD;}
+ #ask:before {content: url('images/ask.png'); position:relative; top:10px; right:10px;}
+ #share:before {content: url('images/share.png'); position:relative; top:10px; right:10px;}
+ #find:before {content: url('images/find.png'); position:relative; top:10px; right:10px;}
 
 </style>
 
@@ -59,10 +62,13 @@
 		<div class="row">
 		
 
-<div class="four columns">
+<div class="two columns">
 	<div id="home"></div> 
 </div>
-<div class="ten columns">
+<div class="three columns"><div class="searchbar">
+	<input placeholder="Search" class="navsearch">
+</div></div>
+<div class="nine columns">
 	<ul>
 	<li id="gemfile">Gemfile</li>
 	<li id="ask">Ask</li>
