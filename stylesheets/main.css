@@ -270,10 +270,10 @@
 
 
 
-	nav {display:block; background-color: #f5efe1; overflow:visible;}
+nav {display:block; background-color: #f5efe1; overflow:visible;}
  #home {background-image: url('../images/logo.png'); background-repeat: no-repeat; height: 32px; width: 44px;  display: block; margin:5px 20px; }
  .search {position: relative; display:block;}
- nav li {float:left; font-size: 14.5px; font-weight: bold; color:#919396;  padding:0 9px 10px 41px;}
+ nav li {float:left; font-size: 14.5px; font-weight: bold; color:#919396;  padding:0 9px 10px 25px;}
  .searchbar {margin-top: 10px; opacity: .5;}
 
  /*nav elements styling */
@@ -316,14 +316,18 @@ border-radius: 5px; float: right; line-height: 15px;}
 box-shadow: 1px 1px 1px 1px #eee; background: white; border: 1px outset #eee; -webkit-border-radius: 10px;
 border-radius: 10px; padding:10px; float:right;}
 
-
-.dots {background: url('../images/dots.png') repeat-y; background-position: 50% 50%;  height: 1100px; position:absolute; z-index: -20; top: 100px left:100px; margin-top: 60px; margin-left: 60px;}
+/*Dot styling homg */
+.dots, .dots2 {background: url('../images/dots.png') repeat-y; background-position: 50% 50%;  height: 1100px; position:absolute; z-index: -20; top: 100px left:100px; margin-top: 60px; margin-left: 60px;}
 
 
 
 @media only screen and (min-width: 960px) {
 .dots-vertical1, .dots-vertical2, .dots-vertical3 { position:absolute; z-index: -20; top: 168px;
 left: 387px;}
+
+nav li {padding:0 9px 10px 41px;}
+
+.dots2 { top: 400px; left: 260px; height: 447px; }
 
 .dots-vertical1 li, .dots-vertical2 li, .dots-vertical3 li {background: url('../images/dots-h.png') repeat-x; background-position: top; height:50px;   width:100px; height: 20px; padding-top: 66px;}
 
@@ -332,21 +336,41 @@ left: 387px;}
 }
 
 
+@media only screen and (max-width: 959px) {.dots-vertical1, .dots-vertical2, .dots-vertical3 {display: none;} .dots {height:2035px;}}
 
-@media only screen and (max-width: 900px){.gem-recommendations:before{content: url('../images/dots-h.png') repeat; position:relative; top:5px; z-index: -20;}}
 
+
+
+/*--------end media queries for dots */
 
 .gem{background: url('../images/gem.png') no-repeat; background-position: bottom; height:35px; float:left; background-color: white;}
 .half-gem{background: url('../images/half_gem.png') no-repeat; background-position: bottom; height:35px; float:left; background-color: white;}
 .gem-recommendations {width: 358px; float:left; color:#997D61;}
 
+@media only screen and (max-width: 900px){.dots-vertical1, .dots-vertical2, .dots-vertical3 {display: none;}  .gem-recommendations:before{content: url('../images/dots-h.png') repeat; position:relative; top:12px; z-index: -20;}
+.recommendation {margin-top: -12px;} .gem-recommendations{width: 347px;} 
+
+}
+
+@media only screen and (max-width: 479px) {
+ .gem-recommendations:before {} .gem-recommendations{margin-top: 10px;}
+ nav div {padding:10px;}
+ footer a {padding:20px;}
+ #home {margin:auto;}
+ input {width:250px; }
+
+ .sharebtn, .folderbtn {padding: 15px;}
+
+}
+
+/*footer styling */
+
 .footerlinks a {text-decoration: none; color:#997D61;}
 .footerlinks li {float:left; padding: 0px 20px; margin: 20px 0;}
 footer {display:block; background-color: #f5efe1; overflow:visible; margin-top: 20px;}
-
-
-
 .footerlinks li { border-right: 2px solid #997D61;}
 .footerlinks li:nth-child(4) {border-right: none;}
+
+.copyright {float:left; padding: 0; margin: auto; padding-left: 120px; }
 
 
