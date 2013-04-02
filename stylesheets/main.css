@@ -269,3 +269,84 @@
 	.add-bottom { margin-bottom: 20px !important; }
 
 
+
+	nav {display:block; background-color: #f5efe1; overflow:visible;}
+ #home {background-image: url('../images/logo.png'); background-repeat: no-repeat; height: 32px; width: 44px;  display: block; margin:5px 20px; }
+ .search {position: relative; display:block;}
+ nav li {float:left; font-size: 14.5px; font-weight: bold; color:#919396;  padding:0 9px 10px 41px;}
+ .searchbar {margin-top: 10px; opacity: .5;}
+
+ /*nav elements styling */
+
+ #gemfile:before {content: url('../images/gemshare.png'); position:relative; top:10px; right:10px; }
+ #gemfile {background-color: #c5b59e; color:#F3ECDD;}
+ #ask:before {content: url('../images/ask.png'); position:relative; top:10px; right:10px;}
+ #share:before {content: url('../images/share.png'); position:relative; top:10px; right:10px;}
+ #find:before {content: url('../images/find.png'); position:relative; top:10px; right:10px;}
+
+ /*user info styling */
+#user-info {font-size: 11px; line-height: 12px; margin-top: 10px;}
+#user-info img {float:left; margin-right: 5px;}
+
+/*service styling */
+
+#service_professional1, #service_professional2, #service_professional3 { height: 124px; width:114px; float: left;}
+#service_professional1{background: url('../images/service_image.png');} 
+#service_professional2 {background: url('../images/location.png') no-repeat;}
+#service_professional3 {background: url('../images/service_image2.png') no-repeat;}
+.service_info {float: left; margin: 30px 0 0 10px; width: 336px; background: white;}
+.folderbtn, .sharebtn { height: 15px; border: 1px solid #E78757; padding: 2px; -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; float: right; line-height: 15px;}
+.folderbtn {background: url('../images/folder.png') no-repeat; background-position: center; width: 30px;}
+.sharebtn { text-decoration: none;  color:#929497;; font-size: .9em; text-align: center; width:40px; margin-left: 5px;}
+
+/*customer styling */
+.gemuser1 { float:left;background:url('../images/user1.png') no-repeat; margin-left: 36px; padding-top:40px; padding-left: 16px; width: 50px;}
+.gemuser1 h4 {background-color: white;}
+
+.gemuser2 { float:left;background:url('../images/user2.png') no-repeat; margin-left: 36px; padding-top:40px; padding-left: 16px; width: 50px;}
+.gemuser2 h4 {background-color: white;}
+
+.gemuser3 { float:left;background:url('../images/user3.png') no-repeat; margin-left: 18px; padding-top:40px; background-position: top; text-align: center; }
+.gemuser3 h4 {background-color: white;}
+
+
+.recommendation { float: left; width: 255px; font-size: 1em; color: #6D6F71; line-height: 1.2em; -webkit-box-shadow: 1px 2px 4px 0px #eee;
+box-shadow: 1px 1px 1px 1px #eee; background: white; border: 1px outset #eee; -webkit-border-radius: 10px;
+border-radius: 10px; padding:10px; float:right;}
+
+
+.dots {background: url('../images/dots.png') repeat-y; background-position: 50% 50%;  height: 1100px; position:absolute; z-index: -20; top: 100px left:100px; margin-top: 60px; margin-left: 60px;}
+
+
+
+@media only screen and (min-width: 960px) {
+.dots-vertical1, .dots-vertical2, .dots-vertical3 { position:absolute; z-index: -20; top: 168px;
+left: 387px;}
+
+.dots-vertical1 li, .dots-vertical2 li, .dots-vertical3 li {background: url('../images/dots-h.png') repeat-x; background-position: top; height:50px;   width:100px; height: 20px; padding-top: 66px;}
+
+.dots-vertical2 {top:578px;}
+.dots-vertical3 {top:1003px;}
+}
+
+
+
+@media only screen and (max-width: 900px){.gem-recommendations:before{content: url('../images/dots-h.png') repeat; position:relative; top:5px; z-index: -20;}}
+
+
+.gem{background: url('../images/gem.png') no-repeat; background-position: bottom; height:35px; float:left; background-color: white;}
+.half-gem{background: url('../images/half_gem.png') no-repeat; background-position: bottom; height:35px; float:left; background-color: white;}
+.gem-recommendations {width: 358px; float:left; color:#997D61;}
+
+.footerlinks a {text-decoration: none; color:#997D61;}
+.footerlinks li {float:left; padding: 0px 20px; margin: 20px 0;}
+footer {display:block; background-color: #f5efe1; overflow:visible; margin-top: 20px;}
+
+
+
+.footerlinks li { border-right: 2px solid #997D61;}
+.footerlinks li:nth-child(4) {border-right: none;}
+
+
