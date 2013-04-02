@@ -273,6 +273,8 @@
 nav {display:block; background-color: #f5efe1; overflow:visible;}
  #home {background-image: url('../images/logo.png'); background-repeat: no-repeat; height: 32px; width: 44px;  display: block; margin:5px 20px; }
  .search {position: relative; display:block;}
+ .searchbtn {width: 21px; height:20px; background: url('../images/search.png') no-repeat; background-position: center; float:left; margin-top: 1px;}
+ nav input {float:left; margin-right:0;}
  nav li {float:left; font-size: 14.5px; font-weight: bold; color:#919396;  padding:0 9px 10px 25px;}
  .searchbar {margin-top: 10px; opacity: .5;}
 
@@ -354,10 +356,14 @@ nav li {padding:0 9px 10px 41px;}
 
 @media only screen and (max-width: 479px) {
  .gem-recommendations:before {} .gem-recommendations{margin-top: 10px;}
- nav div {padding:10px;}
+ #home,nav li, #user-info {padding:20px;}
  footer a {padding:20px;}
- #home {margin:auto;}
- input {width:250px; }
+ #home {margin-top:20px; height: 0px;}
+
+ input {width:220px;}
+
+
+
 
  .sharebtn, .folderbtn {padding: 15px;}
 
